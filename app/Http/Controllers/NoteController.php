@@ -16,7 +16,6 @@ class NoteController extends Controller
     {
         $title = "Home - CRUD";
         $notes = note::all();
-        // $notes = note::latest(); ->paginate(5)->fragment('notes')
         $i = 1;
         return view('note.index',[
             'notes' => $notes,

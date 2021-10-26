@@ -29,11 +29,11 @@
         <td>{{$note->note}}</td>
         <td width="270px" class="text-center">
             <form action="{{route('note.destroy', $note->id)}}" method="POST">
-                <a href="{{route('note.show', $note->id)}}" class="btn btn-outline-success" type="add">Show</a>
-                <a href="{{route('note.edit', $note->id)}}" class="btn btn-outline-warning" type="add">Edit</a>
+            <a href="{{route('note.show', $note->id)}}" class="btn btn-outline-success" type="add">Show</a>
+            <a href="{{route('note.edit', $note->id)}}" class="btn btn-outline-warning" type="add">Edit</a>
                 @csrf
                 @method('DELETE')
-                <button type="sudmit" class="btn btn-danger" onclick="return confirm('Serius mau hapus data?') ">DELETE</button>
+                <a type="sudmit" class="btn btn-danger" onclick="return confirm('Serius mau hapus data?') ">DELETE</a>
             </form>
         </td>
     </tr>

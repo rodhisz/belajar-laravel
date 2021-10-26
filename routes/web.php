@@ -1,8 +1,6 @@
 <?php
 
-use App\Http\controllers\cTestController;
 use App\Http\controllers\NoteController;
-use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,5 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('test', cTestController::class);
 Route::resource('note', NoteController::class);
